@@ -51,4 +51,34 @@ function convertValues(){
 
 }
 
+function changeCurrency(){
+    const currencyName = document.getElementById("currency-name")
+    const currencyFlag = document.querySelector(".currency-flag")
+
+
+
+    if(currencySelect.value == "dolar") {
+        currencyName.innerHTML = "Dólar americano"
+        currencyFlag.src = "./assets/dolar.png"
+    }
+
+    if(currencySelect.value == "euro") {
+        currencyName.innerHTML = "Euro"
+        currencyFlag.src = "./assets/euro.png"
+    }
+
+    if(currencySelect.value == "libra") {
+        currencyName.innerHTML = "Libra"
+        currencyFlag.src = "./assets/libra.png"
+    }
+
+    if(currencySelect.value == "bitcoin") {
+        currencyName.innerHTML = "Bitcoin"
+        currencyFlag.src = "./assets/bitcoin.png"
+    }
+
+convertValue()
+}
+
+currencySelect.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convertValues)
