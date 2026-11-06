@@ -145,30 +145,36 @@ function changeCurrency() {
 function selectedCurrency() {
     const currencyName = document.getElementById("currency-name-convert")
     const currencyFlag = document.querySelector("#currency-flag-convert")
+    const inputCurrency = document.querySelector("#input-currency")
 
     if (currencySelectFrom.value == "dolar-convert") {
         currencyName.innerHTML = "Dólar americano"
         currencyFlag.src = "./assets/dolar.png"
+        inputCurrency.placeholder = "$10,000.00"
     }
 
     if (currencySelectFrom.value == "euro-convert") {
         currencyName.innerHTML = "Euro"
         currencyFlag.src = "./assets/euro.png"
+        inputCurrency.placeholder = "€10,000.00"
     }
 
     if (currencySelectFrom.value == "libra-convert") {
         currencyName.innerHTML = "Libra"
         currencyFlag.src = "./assets/libra.png"
+        inputCurrency.placeholder = "£10,000.00"
     }
 
     if (currencySelectFrom.value == "bitcoin-convert") {
         currencyName.innerHTML = "Bitcoin"
         currencyFlag.src = "./assets/bitcoin.png"
+        inputCurrency.placeholder = "BTC 100,00"
     }
 
     if (currencySelectFrom.value == "real-convert"){
         currencyName.innerHTML = "Real"
         currencyFlag.src = "./assets/real.png"
+        inputCurrency.placeholder = "R$ 10,000.00"
     }
 
 convertValuesFirstSelect()
@@ -177,4 +183,4 @@ convertValuesFirstSelect()
 
 currencySelectFrom.addEventListener("change", selectedCurrency)
 currencySelectTo.addEventListener("change", changeCurrency)
-convertButton.addEventListener("click", convertValues, convertValuesFirstSelect)
+convertButton.addEventListener("click", "touchend", convertValues, convertValuesFirstSelect)

@@ -7,19 +7,31 @@
 }
 
 body{
-    background-color: rgba(138, 81, 252, 1);
+    background-image: url("./assets/backgroundSite.webp");
+    width: 100%;
+    height: 300px;
 }
+
 
 #img-logo{
-    width: 300px;
+    width: 450px;
     display: block;
     margin: 20px auto;    
+    background-color: rgba(25, 25, 112, 0.8);
+    border-radius: 350px;
+
 }
 
+/* .text-description{
+    margin-right: 10px;
+} */
+
+
 main{
-    background-color: rgba(244, 244, 244, 1);
+    background-color: rgb(233, 236, 239);
+    border: 3px solid rgb(25, 25, 112, 0.8);
     border-radius: 20px;
-    width: 375px;
+    width: 455px;
     margin: 0 auto 40px;
     padding: 44px 24px 23px;
 }
@@ -46,7 +58,7 @@ select, input{
 }
 
 button{
-    background: #772fd3;
+    background: #191970;
     border-radius: 5px;
     width: 100%;
     border: none;
@@ -59,6 +71,8 @@ button{
 
 button:hover{
     opacity: 0.8;
+    /* width: calc(100% + 5px); */
+    height: calc(48px + 5px);
 }
 
 button:active{
@@ -66,7 +80,7 @@ button:active{
 }
 
 section{
-    border: 1px solid #772fd3;
+    border: 2px solid  rgb(25, 25, 112, 0.8);
     border-radius: 20px;
     margin-top: 36px;
     padding: 12px;
