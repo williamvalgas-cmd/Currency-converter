@@ -183,4 +183,4 @@ convertValuesFirstSelect()
 
 currencySelectFrom.addEventListener("change", selectedCurrency)
 currencySelectTo.addEventListener("change", changeCurrency)
-convertButton.addEventListener("click", "touchend", convertValues, convertValuesFirstSelect)
+convertButton.addEventListener("click", convertValues, convertValuesFirstSelect)
